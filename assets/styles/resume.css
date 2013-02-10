@@ -1,0 +1,249 @@
+:root{
+	background: url(../images/wavecut.png) #CCC;
+	font-family: 'Oswald', 'sans-serif';
+	text-transform: uppercase;
+}
+html{
+	height: 100%;
+}
+
+body{
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+section, footer{
+	text-align: left;
+}
+
+h2{
+	line-height: .5;
+}
+
+p{
+	font-family: 'Sanchez', 'serif';
+	font-weight: 400;
+	text-transform: none;
+}
+
+body:before{
+	content: "\2702";
+	font-size: 5em;
+	position: relative;
+	display: block;
+	line-height: 1em;
+	margin-bottom: -32px;
+	margin-left: -410px;
+	margin-top: -10px;
+}
+
+body:after{
+	content: "\261D";
+	font-size: 5em;
+	position: relative;
+	display: block;
+	line-height: 1em;
+}
+
+#container{
+	width:630px;
+	height: 100%;
+	border:solid 1px #CCC;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	padding: 40px;
+	border: 2px dashed black;
+}
+
+/* block style links */
+.block-link {
+	padding:0px 5px;
+	text-decoration: none;
+	color: white;
+	line-height: 1.7;
+	background: black;
+	font-family: 'Oswald', 'sans-serif';
+}
+
+.block-link:link{
+	background: black;
+}
+
+.block-link:active{
+	color: green;
+}
+
+.block-link:hover{
+	color: orange;
+}
+
+
+/* Begin header styles */
+
+header{
+
+}
+
+header .col1{
+	float:left;
+	font-weight: 700;
+	font-size: 3.4em;
+	line-height: 1;
+}
+
+header .col1 .title{
+	font-size: 1.05em;
+}
+
+header .col2{
+	text-align: right;
+	line-height: 1.2;
+}
+
+header .links{
+	line-height: 1.2;
+}
+
+header .adr{
+	color: gray;
+}
+
+header .adr .locality:before{
+	content: "\2602  ";
+	font-size: 1.2em;
+	line-height: .1;
+	position: relative;
+}
+
+header .summary{
+	margin-top: 10px;
+	text-align: center;
+	font-size: .95em;
+	height: 90px;
+	border-top: solid 7px black;
+	border-bottom: solid 7px black;
+	padding: 5px;
+	clear:both;
+}
+
+header .summary p{
+	width:540px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	font-style: italic;
+	float:left;
+}
+
+/* blood easter egg */
+header .summary p em a, .summary p em a:link, .summary p em a:visited, .summary p em a:hover{
+	text-decoration: none;
+	color: red;
+	cursor: crosshair;
+}
+
+header .summary .bookend{
+	width:25px;
+	font-size: 4.5em;
+	line-height: 1.2;
+}
+
+header .summary .b-left{
+	float:left;
+}
+
+header .summary .b-right{
+	float:right;
+}
+
+/* This is the middle section containing work and experience content*/
+
+#work-and-experience{
+	/*border:solid 1px #CCC;*/
+	
+}
+
+/* Left column styles */
+
+#work-and-experience .col1{
+	width:315px;
+	height:100%;
+	float:left;
+}
+
+#work-and-experience .col1 .experience .vcard:nth-child(1n+3){
+	margin-top: 20px;
+}
+
+#work-and-experience .col1 .org{
+	font-size: 1.1em;
+	line-height: 1.8;
+	
+}
+
+#work-and-experience .col1 .employment-period{
+	margin-right: 30px;
+	float:right;
+}
+
+#work-and-experience .col1 .role{
+	letter-spacing: .1em;
+	border-bottom: solid 3px black;
+	font-weight: 300;
+	width: 250px;
+}
+
+#work-and-experience .col1 .projects h4{
+	letter-spacing: -0.05em;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#work-and-experience .col1 .projects{
+	line-height: 1.3em;
+	letter-spacing: .1em;
+	font-weight: 300;
+	padding-left: 15px;
+}
+
+#work-and-experience .col1 .projects ul{
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+
+#work-and-experience .col1 .projects li{
+	text-transform: none;
+}
+
+/* Right column styles */
+
+#work-and-experience .col2{
+	width:12px;
+	float:left;
+	border-left:dashed 3px black;
+}
+
+#work-and-experience .col2 section{
+	width: 250px;
+	margin-left: 40px;
+}
+
+#work-and-experience .col2 section p{
+	font-size: .9em;
+}
+
+/* Begin footer styles */
+
+footer{
+	border-top: solid 7px black;
+	clear:both;
+}
+
+footer .references{
+	text-align: center;
+	font-size: .9em;
+}
