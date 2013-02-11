@@ -74,6 +74,19 @@ header .col1{
 header .col1 .title{
 	font-size: 1.05em;
 }
+/* add some silly rotation to a few letters */
+header .col1 em{
+	display: inline-block;
+	font-style: normal;
+}
+
+header .col1 .fn em{
+	-webkit-transform:rotate(-7deg);
+}
+
+header .col1 .title em{
+	-webkit-transform:rotate(5deg);
+}
 
 /* .header col2 contains the links and contact information */
 
