@@ -63,7 +63,7 @@ p{
 
 
 /* Begin header styles */
-
+/* .header col1 contains the resume name and title */
 header .col1{
 	float:left;
 	font-weight: 700;
@@ -75,20 +75,22 @@ header .col1 .title{
 	font-size: 1.05em;
 }
 
+/* .header col2 contains the links and contact information */
+
 header .col2{
 	text-align: right;
 	line-height: 1.2;
 }
 
-header .links{
+header .col2 .links{
 	line-height: 1.2;
 }
 
-header .adr{
+header .col2 .adr{
 	color: gray;
 }
 
-header .adr .locality:before{
+header .col2 .adr .locality:before{
 	content: "\2602  ";
 	font-size: 1.2em;
 	line-height: .1;
@@ -228,6 +230,11 @@ header .summary .b-right{
 
 #work-and-experience .col2 section p{
 	font-size: .9em;
+}
+
+/* Begin JavaScript easter egg */
+#work-and-experience .col2 section dfn{
+	font-style: normal;
 }
 
 /* Begin footer styles */
