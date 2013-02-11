@@ -253,6 +253,7 @@ footer .references{
 	-moz-transform:rotate(-5deg);
 	-o-transform:rotate(-5deg);
 	-ms-transform:rotate(-5deg);
+	transform:rotate(-5deg);
 }
 
 /* Add some gratuitous graphics and styles*/
