@@ -2,15 +2,10 @@
 	background: url(../images/wavecut.png) #CCC;
 	font-family: 'Oswald', 'sans-serif';
 	text-transform: uppercase;
-}
-html{
-	height: 100%;
-}
-
-body{
 	font-size: 16px;
 	line-height: 1.2;
 	text-align: center;
+	height: 100%;
 }
 
 section, footer{
@@ -18,7 +13,11 @@ section, footer{
 }
 
 h2{
-	line-height: .5;
+	line-height: 1;
+	/* need to look further into the usage of ex */
+	/* have seen it recommended for dealing with vertical space */
+	margin-top: 1ex;
+	margin-bottom: 1ex;
 }
 
 p{
@@ -27,34 +26,17 @@ p{
 	text-transform: none;
 }
 
-body:before{
-	content: "\2702";
-	font-size: 5em;
-	position: relative;
-	display: block;
-	line-height: 1em;
-	margin-bottom: -32px;
-	margin-left: -410px;
-	margin-top: -10px;
-}
-
-body:after{
-	content: "\261D";
-	font-size: 5em;
-	position: relative;
-	display: block;
-	line-height: 1em;
-}
-
 #container{
 	width:630px;
 	height: 100%;
 	border:solid 1px #CCC;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	background: white;
 	padding: 40px;
 	border: 2px dashed black;
+	border-radius: 10px;
+	/* add a nice orangy gradient */
+	box-shadow: 0px 0px 500px rgba(255, 204, 163, .5);
 }
 
 /* block style links */
@@ -81,10 +63,6 @@ body:after{
 
 
 /* Begin header styles */
-
-header{
-
-}
 
 header .col1{
 	float:left;
@@ -114,16 +92,14 @@ header .adr .locality:before{
 	content: "\2602  ";
 	font-size: 1.2em;
 	line-height: .1;
-	position: relative;
 }
 
 header .summary{
 	margin-top: 10px;
 	text-align: center;
 	font-size: .95em;
-	height: 90px;
+	/*height: 90px;*/
 	border-top: solid 7px black;
-	border-bottom: solid 7px black;
 	padding: 5px;
 	clear:both;
 }
@@ -135,6 +111,24 @@ header .summary p{
 	text-align: center;
 	font-style: italic;
 	float:left;
+	display: inline;
+}
+
+header .summary:before, .summary:after{
+	width:25px;
+	font-size: 4.5em;
+	line-height: 1.2;
+	font-style: initial;
+	display: inline;
+	float:left;
+}
+
+header .summary:before{
+	content: "{";
+}
+
+header .summary:after{
+	content: "}";
 }
 
 /* blood easter egg */
@@ -158,11 +152,12 @@ header .summary .b-right{
 	float:right;
 }
 
-/* This is the middle section containing work and experience content*/
+/* This is the middle section containing 
+	work and experience related content */
 
 #work-and-experience{
-	/*border:solid 1px #CCC;*/
-	
+	border-top: solid 7px black;
+	clear:both;
 }
 
 /* Left column styles */
@@ -180,7 +175,6 @@ header .summary .b-right{
 #work-and-experience .col1 .org{
 	font-size: 1.1em;
 	line-height: 1.8;
-	
 }
 
 #work-and-experience .col1 .employment-period{
@@ -195,18 +189,18 @@ header .summary .b-right{
 	width: 250px;
 }
 
-#work-and-experience .col1 .projects h4{
-	letter-spacing: -0.05em;
-	font-weight: 700;
-	margin-top: 10px;
-	margin-bottom: 5px;
-}
-
 #work-and-experience .col1 .projects{
 	line-height: 1.3em;
 	letter-spacing: .1em;
 	font-weight: 300;
 	padding-left: 15px;
+}
+
+#work-and-experience .col1 .projects h4{
+	letter-spacing: -0.05em;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 
 #work-and-experience .col1 .projects ul{
@@ -246,4 +240,31 @@ footer{
 footer .references{
 	text-align: center;
 	font-size: .9em;
+	padding-top: 10px;
+	/* begin completely unecessary rotation of text */
+	-webkit-transform:rotate(-5deg);
+	-moz-transform:rotate(-5deg);
+	-o-transform:rotate(-5deg);
+	-ms-transform:rotate(-5deg);
+}
+
+/* Add some gratuitous graphics and styles*/
+/* sweet pair of scissors */
+body:before{
+	content: "\2702";
+	font-size: 5em;
+	position: relative;
+	display: block;
+	line-height: 1em;
+	margin-bottom: -32px;
+	margin-left: -410px;
+	margin-top: -10px;
+}
+/* super cool pointing finger */
+body:after{
+	content: "\261D";
+	font-size: 5em;
+	position: relative;
+	display: block;
+	line-height: 1em;
 }
