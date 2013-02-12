@@ -82,10 +82,18 @@ header .col1 em{
 
 header .col1 .fn em{
 	-webkit-transform:rotate(-7deg);
+	-moz-transform:rotate(-7deg);
+	-o-transform:rotate(-7deg);
+	-ms-transform:rotate(-7deg);
+	transform:rotate(-7deg);
 }
 
 header .col1 .title em{
 	-webkit-transform:rotate(5deg);
+	-moz-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+	-ms-transform:rotate(5deg);
+	transform:rotate(5deg);
 }
 
 /* .header col2 contains the links and contact information */
